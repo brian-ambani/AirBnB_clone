@@ -1,8 +1,6 @@
-### AirBnB_clone
+### 0x00. AirBnB clone - The console
 
-#### 0x00. AirBnB clone - The console
-
-##### The general knowledge for this that you need to know:
+##### The general knowledge for this project:
 
 
 * How to create a Python package
@@ -15,3 +13,7 @@
 * What is *args and how to use it
 * What is **kwargs and how to use it
 * How to handle named arguments in a function
+
+### Authors
+##### [Brain Ambani](https://github.com/brian-ambani) | Email :   [brainambani1@gmail.com](mailto:brainambani1@gmail.com)
+##### Leitich Leitich | Email: []
