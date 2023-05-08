@@ -15,5 +15,5 @@
 * How to handle named arguments in a function
 
 ### Authors
-##### [Brain Ambani](https://github.com/brian-ambani) | Email :   [brainambani1@gmail.com](mailto:brainambani1@gmail.com)
+##### [Brain Ambani](https://github.com/brian-ambani) | Email : [brainambani1@gmail.com](mailto:brainambani1@gmail.com)
 ##### Leitich Leitich | Email: []
