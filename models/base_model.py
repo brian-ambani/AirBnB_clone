@@ -4,7 +4,8 @@ A module with a class that is inherited in all sub classes
 """
 
 import uuid
-import datetime
+from datetime import datetime
+from models import storage
 
 
 class BaseModel:
