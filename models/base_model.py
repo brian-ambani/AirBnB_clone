@@ -36,3 +36,6 @@ class BaseModel:
 
     def __str__(self):
         """ Returns class name, id and dict"""
+
+        return "[{}] ({}) {}"\
+            .format(self.__class__.__name__, self.id, self.__dict__)
