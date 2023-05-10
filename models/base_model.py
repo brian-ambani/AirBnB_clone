@@ -5,7 +5,6 @@ A module with a class that is inherited in all sub classes
 
 import uuid
 from datetime import datetime
-from models import storage
 
 
 class BaseModel:
