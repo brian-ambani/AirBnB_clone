@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" Module containing a class that serializes instances to a JSON file and deserilizes JSON file to instances
+""" Module containing a class that
+serializes instances to a JSON file
+and deserilizes JSON file to instances
 """
 
 import json
@@ -33,5 +35,10 @@ class FileStorage:
                 obj_dict[key] = value.to_dict()
             json.dump(obj_dict, f)
 
-
-
+    def reload(self):
+        """deserilizes the JSON file to __objects"""
+        if not os.path.isfile(FileStorage.__file_path):
+            return
+        with open(FileStorage.__file_-path, 'r') as f:
+            for key, value in json.load(f).item():
+                self.new(dict[value['__class__]](**value))
