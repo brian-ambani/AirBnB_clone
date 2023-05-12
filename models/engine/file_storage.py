@@ -5,7 +5,6 @@ and deserilizes JSON file to instances
 """
 
 import json
-import os
 
 class FileStorage:
     """serilizes instances and deserilizes JSON files"""
@@ -34,3 +33,10 @@ class FileStorage:
             for key, value in self.__objects.items():
                 obj_dict[key] = value.to_dict()
             json.dump(obj_dict, f)
+
+    def reload(self):
+        """ Deserializes __objects from the JSON file """
+
+            with open(FileStorage.__file_path, 'r') as f:
+                for key, value in json.load(f).items():
+                    self.new(dct[value['__class__']](**value))
