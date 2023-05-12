@@ -37,7 +37,6 @@ class FileStorage:
     def reload(self):
         try:
             with open(FileStorage.__file_path, "r") as file:
-                obj = {'BaseModel': BaseModel, 'User': User}
                 data = json.load(file)
                 FileStorage.__objects = {}
 
