@@ -51,7 +51,7 @@ class HBNBCommand(cmd.Cmd):
         print(count)
 
     def do_create(self, type_model):
-        """ Creates an instance according to a given class """
+        """ Creates an instance according of BaseModel """
 
         if not type_model:
             print("** class name missing **")
@@ -66,7 +66,8 @@ class HBNBCommand(cmd.Cmd):
             my_model.save()
 
     def do_show(self, arg):
-        """ Shows string representation of an instance passed """
+        """ Prints the string rep of an instance based
+        on class name"""
 
         if not arg:
             print("** class name missing **")
@@ -89,7 +90,8 @@ class HBNBCommand(cmd.Cmd):
             print("** no instance found **")
 
     def do_destroy(self, arg):
-        """ Deletes an instance passed """
+        """ Deletes an instance based on the class
+        name and id"""
 
         if not arg:
             print("** class name missing **")
@@ -114,7 +116,8 @@ class HBNBCommand(cmd.Cmd):
             print("** no instance found **")
 
     def do_all(self, arg):
-        """ Prints string represention of all instances of a given class """
+        """ Prints all string rep of all instances
+        base on or not the class name"""
 
         if not arg:
             print("** class name missing **")
@@ -134,7 +137,7 @@ class HBNBCommand(cmd.Cmd):
             print(list_instances)
 
     def do_update(self, arg):
-        """ Updates an instance based on the class name and id """
+        """ Updates an instance based on class and id"""
 
         if not arg:
             print("** class name missing **")
@@ -168,10 +171,12 @@ class HBNBCommand(cmd.Cmd):
 
     def do_quit(self, line):
         """ Quit command to exit the command interpreter """
+
         return True
 
     def do_EOF(self, line):
         """ EOF command to exit the command interpreter """
+
         return True
 
 
