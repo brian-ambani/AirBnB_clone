@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A module that efines city
+A module that defines city class
 """
 from models.base_model import BaseModel
 
